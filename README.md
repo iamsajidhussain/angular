@@ -13,13 +13,13 @@ This repository contains a comprehensive collection of **Angular interview quest
 6. [How do you create a service in Angular and why would you use one?](#6-how-do-you-create-a-service-in-angular-and-why-would-you-use-one)
 7. [Can you explain what dependency injection is in Angular?](#7-can-you-explain-what-dependency-injection-is-in-angular)
 8. [What is a module in Angular and what is its purpose?](#8-what-is-a-module-in-angular-and-what-is-its-purpose)
-9. [What is Angular and what are its key features?](#1-what-is-angular-and-what-are-its-key-features)
-10. [What is Angular and what are its key features?](#1-what-is-angular-and-what-are-its-key-features)
-11. [What is Angular and what are its key features?](#1-what-is-angular-and-what-are-its-key-features)
-12. [What is Angular and what are its key features?](#1-what-is-angular-and-what-are-its-key-features)
-13. [What is Angular and what are its key features?](#1-what-is-angular-and-what-are-its-key-features)
-14. [What is Angular and what are its key features?](#1-what-is-angular-and-what-are-its-key-features)
-15. [What is Angular and what are its key features?](#1-what-is-angular-and-what-are-its-key-features)
+9. [How do you handle events in Angular?](#9-how-do-you-handle-events-in-angular)
+10. [What is two-way binding and how do you implement it in Angular?](#10-what-is-two-way-binding-and-how-do-you-implement-it-in-angular)
+11. [Explain the difference between an Angular component and a directive.](#11-explain-the-difference-between-an-angular-component-and-a-directive)
+12. [What are Pipes in Angular and where would you use them?](#12-what-are-pipes-in-angular-and-where-would-you-use-them)
+13. [How do you handle form submissions in Angular?](#13-how-do-you-handle-form-submissions-in-angular)
+14. [What is Angular CLI and what can it be used for?](#14-what-is-angular-cli-and-what-can-it-be-used-for)
+15. [Describe how to make HTTP requests in Angular using HttpClient.](#15-describe-how-to-make-http-requests-in-angular-using-httpclient)
 
 
 ---
