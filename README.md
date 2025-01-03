@@ -40,7 +40,7 @@ Angular is a TypeScript-based open-source framework for building single-page web
 Angular is a TypeScript-based framework with features like data binding, dependency injection, components, directives, and reactive programming for scalable SPAs.
 <br>
 
-## 2. Explain data-binding in Angular. What are the different types?
+## 2. Explain _data-binding_ in _Angular_. What are the different types?
 
 <br>
 
@@ -48,7 +48,7 @@ Angular is a TypeScript-based framework with features like data binding, depende
 
 <br>
 
-## 4. What is a component in Angular and how is it used?
+## 4. What is a _component_ in Angular and how is it used?
 
 <br>
 
@@ -56,27 +56,27 @@ Angular is a TypeScript-based framework with features like data binding, depende
 
 <br>
 
-## 5. What are directives in Angular and can you name a few commonly used ones?
+## 5. What are _directives_ in _Angular_ and can you name a few commonly used ones?
 
 <br>
 
-## 6. How do you create a service in Angular and why would you use one? 
+## 6. How do you create a _service in Angular_ and why would you use one? 
 
 <br>
 
-## 7. Can you explain what dependency injection is in Angular? 
+## 7. Can you explain what _dependency injection_ is in Angular? 
 
 <br>
 
-## 8. What is a module in Angular and what is its purpose? 
+## 8. What is a _module in Angular_ and what is its purpose? 
 
 <br>
 
-## 9. How do you handle events in Angular? 
+## 9. How do you handle _events_ in Angular? 
 
 <br>
 
-## 10. What is two-way binding and how do you implement it in Angular? 
+## 10. What is _two-way binding_ and how do you implement it in Angular? 
 
 <br>
 
