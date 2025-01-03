@@ -5,7 +5,21 @@ This repository contains a comprehensive collection of **Angular interview quest
 
 ## 🚀 Table of Contents
 
-1. [Explain the file structure of a .Net 8 project.](#1-explain-the-file-structure-of-a-net-8-project)
+1. [What is Angular and what are its key features?](#1-what-is-angular-and-what-are-its-key-features)
+2. [Explain data-binding in Angular. What are the different types?](#2-explain-data-binding-in-angular-what-are-the-different-types)
+3. [Describe the Angular application architecture.](#3-describe-the-angular-application-architecture)
+4. [What is a component in Angular and how is it used?](#4-what-is-a-component-in-angular-and-how-is-it-used)
+5. [What are directives in Angular and can you name a few commonly used ones?](#5-what-are-directives-in-angular-and-can-you-name-a-few-commonly-used-ones)
+6. [How do you create a service in Angular and why would you use one?](#6-how-do-you-create-a-service-in-angular-and-why-would-you-use-one)
+7. [Can you explain what dependency injection is in Angular?](#7-can-you-explain-what-dependency-injection-is-in-angular)
+8. [What is a module in Angular and what is its purpose?](#8-what-is-a-module-in-angular-and-what-is-its-purpose)
+9. [What is Angular and what are its key features?](#1-what-is-angular-and-what-are-its-key-features)
+10. [What is Angular and what are its key features?](#1-what-is-angular-and-what-are-its-key-features)
+11. [What is Angular and what are its key features?](#1-what-is-angular-and-what-are-its-key-features)
+12. [What is Angular and what are its key features?](#1-what-is-angular-and-what-are-its-key-features)
+13. [What is Angular and what are its key features?](#1-what-is-angular-and-what-are-its-key-features)
+14. [What is Angular and what are its key features?](#1-what-is-angular-and-what-are-its-key-features)
+15. [What is Angular and what are its key features?](#1-what-is-angular-and-what-are-its-key-features)
 
 
 ---
