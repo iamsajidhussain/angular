@@ -24,7 +24,6 @@ Feel free to contribute to this repository and make it even more valuable for th
 ---
 ## 🎯 Angular Fundamentals
 ## 1. What is _Angular_ and what are its key features?  
-**Answer:**  
 Angular is a TypeScript-based open-source framework for building single-page web applications (SPAs). It is maintained by Google and offers a powerful ecosystem for developing dynamic and scalable applications.  
 
 **Key Features:**  
@@ -41,7 +40,6 @@ Angular is a TypeScript-based framework with features like data binding, depende
 <br>
 
 ## 2. Explain _data-binding_ in _Angular_. What are the different types?
-**Answer:**  
 Data binding in Angular allows synchronization between the model (data) and the view (UI). It ensures that changes in data reflect automatically in the UI and vice versa.  
 
 **Types of Data Binding in Angular:**
