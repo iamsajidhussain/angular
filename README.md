@@ -387,6 +387,259 @@ Angular implements two-way binding using the **`ngModel`** directive, which bind
 Two-way data binding in Angular syncs data between the model and view using `[(ngModel)]`. It ensures changes in the view automatically update the model and vice versa.
 <br>
 
+## 11. Explain the difference between an _Angular component_ and a _directive_.
+**Angular components** and **directives** are both building blocks in Angular, but they serve different purposes and have distinct characteristics.
+
+### **Angular Component:**
+1. **Purpose**: A component is used to define a **UI element** and control its behavior, including template (HTML), logic (TypeScript), and styles (CSS).
+2. **Has a Template**: A component always has a template that defines the view (UI).
+3. **Used to Create UI**: Components are used to create reusable UI elements, like buttons, forms, or entire pages.
+4. **Selectors**: Components are identified and used in the template by their **selector** (HTML tag).
+   
+   ```typescript
+   @Component({
+     selector: 'app-button',
+     templateUrl: './button.component.html'
+   })
+   ```
+
+### **Angular Directive:**
+1. **Purpose**: A directive is used to **modify the behavior or appearance** of elements in the DOM. It doesn't have its own view.
+2. **No Template**: Directives do not have templates or styles. They alter the appearance or behavior of the host element they are attached to.
+3. **Used to Extend HTML**: Directives add additional functionality to existing elements without changing the overall structure.
+4. **Types**: There are two types of directives:
+   - **Structural Directives** (e.g., `*ngIf`, `*ngFor`): Change the structure of the DOM by adding or removing elements.
+   - **Attribute Directives** (e.g., `ngClass`, `ngStyle`): Change the behavior or appearance of an element.
+
+   ```typescript
+   @Directive({
+     selector: '[appHighlight]'
+   })
+   ```
+
+### **Summary:**
+- **Component**: Defines both the UI and behavior, always has a template, and is used to create reusable UI elements.
+- **Directive**: Modifies the behavior or appearance of DOM elements without a template, and can be structural or attribute-based.
+<br>
+
+## 12. What are _Pipes in Angular_ and where would you use them?
+**Pipes** in Angular are used to **transform data** in the template before displaying it to the user. They are simple functions that take an input, transform it, and return the transformed value. Pipes are ideal for presenting data in a specific format, such as dates, currencies, or custom transformations.
+
+### **Types of Pipes:**
+1. **Built-in Pipes**:
+   - **`date`**: Formats dates.
+   - **`currency`**: Transforms a number into a currency format.
+   - **`uppercase` / `lowercase`**: Converts text to uppercase or lowercase.
+   - **`json`**: Converts an object to a JSON string for debugging.
+   - **`percent`**: Formats a number as a percentage.
+   - **`async`**: Unwraps observable values and resolves promises in the template.
+
+   Example:
+   ```html
+   <p>{{ birthday | date:'shortDate' }}</p>
+   ```
+
+2. **Custom Pipes**:  
+   You can create custom pipes to handle specific data transformations based on your application's needs.
+
+   Example of a custom pipe:
+   ```typescript
+   @Pipe({
+     name: 'reverse'
+   })
+   export class ReversePipe implements PipeTransform {
+     transform(value: string): string {
+       return value.split('').reverse().join('');
+     }
+   }
+   ```
+
+   In the template:
+   ```html
+   <p>{{ 'Hello' | reverse }}</p> <!-- Outputs: olleH -->
+   ```
+
+### **Where to Use Pipes:**
+- **Display Data**: When you need to format or transform data in the view.
+- **Format Date, Currency, or Text**: For consistent formatting across the app.
+- **Data Transformation**: When applying simple transformations to data directly in the template.
+
+### **Summary:**  
+Pipes in Angular are used to transform data before displaying it in the view. Built-in pipes handle common tasks like formatting dates or currencies, and custom pipes can be created for specific transformations.
+<br>
+
+## 13. How do you handle _form submissions_ in Angular?
+In Angular, form submissions are handled using **reactive** or **template-driven** forms. Both approaches allow capturing user input, validating the form, and processing the submission.
+
+### **Template-Driven Forms:**
+1. **Create a Form**: Bind the form to a model using `ngModel`.
+   ```html
+   <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+     <input type="text" name="username" [(ngModel)]="username" required />
+     <button type="submit">Submit</button>
+   </form>
+   ```
+
+2. **Handle Submission**: Define the `onSubmit()` method in the component class to handle the form submission.
+   ```typescript
+   export class MyComponent {
+     username: string = '';
+
+     onSubmit(form: NgForm) {
+       console.log(form.value); // Process form data
+     }
+   }
+   ```
+
+### **Reactive Forms:**
+1. **Create a Form Group**: Define a `FormGroup` and `FormControl` in the component.
+   ```typescript
+   import { FormGroup, FormControl } from '@angular/forms';
+
+   export class MyComponent {
+     myForm = new FormGroup({
+       username: new FormControl('', [Validators.required])
+     });
+
+     onSubmit() {
+       console.log(this.myForm.value); // Process form data
+     }
+   }
+   ```
+
+2. **Template for Form**: Bind the form to the template using `formGroup` and `formControlName`.
+   ```html
+   <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+     <input formControlName="username" />
+     <button type="submit" [disabled]="myForm.invalid">Submit</button>
+   </form>
+   ```
+
+### **Summary:**  
+In Angular, form submissions are handled using either **template-driven** or **reactive forms**. Template-driven forms bind the form model using `ngModel`, while reactive forms use `FormGroup` and `FormControl`. Both approaches allow form data to be captured and processed on submission.
+<br>
+
+## 14. What is _Angular CLI_ and what can it be used for?
+**Angular CLI (Command Line Interface)** is a powerful tool for automating and managing various tasks in Angular development. It simplifies the process of creating, building, testing, and deploying Angular applications. The CLI provides commands to perform common operations, improving productivity and consistency in development.
+
+### **Key Features and Uses of Angular CLI:**
+1. **Project Creation**:  
+   - `ng new <project-name>`: Initializes a new Angular project with a predefined folder structure.
+   
+2. **Development Server**:  
+   - `ng serve`: Starts a development server and opens the app in the browser, with automatic reloading on changes.
+
+3. **Generating Components, Services, and More**:  
+   - `ng generate component <component-name>`: Generates components, directives, services, pipes, modules, etc.
+   - `ng g c <component-name>`: A shorthand for generating components.
+
+4. **Building the Application**:  
+   - `ng build`: Compiles the application into static files for deployment, optimizing code for production.
+
+5. **Running Tests**:  
+   - `ng test`: Runs unit tests using Karma and Jasmine.
+   - `ng e2e`: Runs end-to-end tests using Protractor.
+
+6. **Adding Libraries and Dependencies**:  
+   - `ng add <library>`: Installs and configures libraries automatically (e.g., Angular Material).
+
+7. **Environment Configuration**:  
+   - Supports multiple environments (development, production) and allows configuration changes based on the environment.
+
+8. **Deployment**:  
+   - `ng deploy`: Helps with deployment to hosting platforms like Firebase, GitHub Pages, etc.
+
+### **Summary:**  
+Angular CLI is a command-line tool for creating, building, testing, and deploying Angular applications. It simplifies common tasks like project setup, generating components, serving the app, running tests, and handling deployments.
+<br>
+
+## 15. Describe how to make _HTTP requests_ in Angular using _HttpClient_.
+In Angular, HTTP requests can be made using the `HttpClient` module, which provides methods to interact with RESTful APIs and fetch or send data. The `HttpClient` is part of the `@angular/common/http` package and supports various HTTP methods like `GET`, `POST`, `PUT`, `DELETE`, etc.
+
+### **Steps to Make HTTP Requests using HttpClient:**
+
+1. **Import HttpClientModule**:
+   In your app module, import `HttpClientModule` to enable HTTP services.
+   ```typescript
+   import { HttpClientModule } from '@angular/common/http';
+
+   @NgModule({
+     imports: [HttpClientModule]
+   })
+   export class AppModule {}
+   ```
+
+2. **Inject HttpClient into a Service or Component**:
+   Inject `HttpClient` into your service or component to make HTTP requests.
+   ```typescript
+   import { HttpClient } from '@angular/common/http';
+   import { Injectable } from '@angular/core';
+
+   @Injectable({
+     providedIn: 'root',
+   })
+   export class ApiService {
+     constructor(private http: HttpClient) {}
+
+     getData() {
+       return this.http.get('https://api.example.com/data');
+     }
+   }
+   ```
+
+3. **Making HTTP Requests**:
+
+   - **GET Request**: Fetch data from a server.
+     ```typescript
+     this.http.get('https://api.example.com/data').subscribe(response => {
+       console.log(response);
+     });
+     ```
+
+   - **POST Request**: Send data to the server.
+     ```typescript
+     const data = { name: 'John', age: 30 };
+     this.http.post('https://api.example.com/data', data).subscribe(response => {
+       console.log(response);
+     });
+     ```
+
+   - **PUT Request**: Update existing data on the server.
+     ```typescript
+     const updatedData = { name: 'John', age: 31 };
+     this.http.put('https://api.example.com/data/1', updatedData).subscribe(response => {
+       console.log(response);
+     });
+     ```
+
+   - **DELETE Request**: Delete data from the server.
+     ```typescript
+     this.http.delete('https://api.example.com/data/1').subscribe(response => {
+       console.log(response);
+     });
+     ```
+
+4. **Handling Response & Errors**:
+   - **Handling Response**: You can use `subscribe()` to handle the response.
+   - **Error Handling**: Use `catchError` for error handling.
+     ```typescript
+     import { catchError } from 'rxjs/operators';
+     import { of } from 'rxjs';
+
+     this.http.get('https://api.example.com/data').pipe(
+       catchError(error => {
+         console.error('Error occurred:', error);
+         return of([]);
+       })
+     ).subscribe(response => {
+       console.log(response);
+     });
+     ```
+
+### **Summary:**  
+In Angular, HTTP requests are made using the `HttpClient` module. You import `HttpClientModule` in the app module, inject `HttpClient` into a service or component, and then use methods like `get()`, `post()`, `put()`, and `delete()` to interact with APIs. Handling responses and errors can be done using RxJS operators like `subscribe()` and `catchError`.
+<br>
+
 ---
 
 ## 🤝 Contributing
