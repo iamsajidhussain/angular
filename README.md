@@ -6,9 +6,7 @@ This repository contains a comprehensive collection of **Angular interview quest
 ## 🚀 Table of Contents
 
 1. [Explain the file structure of a .Net 8 project.](#1-explain-the-file-structure-of-a-net-8-project)
-2. [What is _.NET Core_ and how does it differ from the _.NET Framework_?](#core-topics)
-3. [Contributing](#contributing)
-4. [License](#license)
+
 
 ---
 
