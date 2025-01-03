@@ -22,8 +22,61 @@ Welcome to the **.Angular Interview Questions** repository! Whether you're a beg
 Feel free to contribute to this repository and make it even more valuable for the community!
 
 ---
-## 🎯 .NET Core Fundamentals
-## 1. Explain the file structure of a _.Net 8 project_. 
+## 🎯 Angular Fundamentals
+## 1. What is _Angular_ and what are its key features?  
+**Answer:**  
+Angular is a TypeScript-based open-source framework for building single-page web applications (SPAs). It is maintained by Google and offers a powerful ecosystem for developing dynamic and scalable applications.  
+
+**Key Features:**  
+1. **Two-way Data Binding**: Synchronizes data between the model and the view.  
+2. **Dependency Injection**: Simplifies service management and reusability.  
+3. **Component-Based Architecture**: Modular and reusable building blocks.  
+4. **Directives**: Extend HTML with custom behavior.  
+5. **RxJS**: Handles asynchronous operations using reactive programming.  
+6. **Routing**: Manages navigation between different views.  
+7. **Ahead-of-Time (AOT) Compilation**: Improves performance by pre-compiling HTML and TypeScript.  
+
+**Summary:**  
+Angular is a TypeScript-based framework with features like data binding, dependency injection, components, directives, and reactive programming for scalable SPAs.
+<br>
+
+## 2. Explain data-binding in Angular. What are the different types?
+
+<br>
+
+## 3. Describe the Angular application architecture.  
+
+<br>
+
+## 4. What is a component in Angular and how is it used?
+
+<br>
+
+## 1. What is _Angular_ and what are its key features? 
+
+<br>
+
+## 5. What are directives in Angular and can you name a few commonly used ones?
+
+<br>
+
+## 6. How do you create a service in Angular and why would you use one? 
+
+<br>
+
+## 7. Can you explain what dependency injection is in Angular? 
+
+<br>
+
+## 8. What is a module in Angular and what is its purpose? 
+
+<br>
+
+## 9. How do you handle events in Angular? 
+
+<br>
+
+## 10. What is two-way binding and how do you implement it in Angular? 
 
 <br>
 
