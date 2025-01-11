@@ -1,4 +1,4 @@
-# angular
+# Angular
 This repository contains a comprehensive collection of **Angular interview questions** to help you prepare for technical interviews. These questions cover a wide range of topics, 
 from basics to advanced concepts, ensuring you're well-prepared for your next interview.
 
@@ -26,6 +26,8 @@ Here’s the full categorized list of 100 questions with linked titles for your 
 13. [How do you handle form submissions in Angular?](#13-how-do-you-handle-form-submissions-in-angular)  
 14. [What is Angular CLI and what can it be used for?](#14-what-is-angular-cli-and-what-can-it-be-used-for)  
 15. [Describe how to make HTTP requests in Angular using HttpClient.](#15-describe-how-to-make-http-requests-in-angular-using-httpclient)  
+
+### 🎯 Angular Components and Data Binding
 16. [How would you pass data from a parent to a child component?](#16-how-would-you-pass-data-from-a-parent-to-a-child-component)  
 17. [Can you describe how to emit events from a child component to a parent component?](#17-can-you-describe-how-to-emit-events-from-a-child-component-to-a-parent-component)  
 18. [What are the lifecycle hooks available for Angular components and what do they represent?](#18-what-are-the-lifecycle-hooks-available-for-angular-components-and-what-do-they-represent)  
@@ -33,12 +35,16 @@ Here’s the full categorized list of 100 questions with linked titles for your 
 20. [How do you apply conditional styling to Angular components?](#20-how-do-you-apply-conditional-styling-to-angular-components)  
 21. [What is the difference between structural and attribute directives?](#21-what-is-the-difference-between-structural-and-attribute-directives)  
 22. [Describe how you would create a custom structural directive.](#22-describe-how-you-would-create-a-custom-structural-directive)  
+
+### 🎯 Angular Services and Dependency Injection
 23. [How can you make a service singleton in Angular?](#23-how-can-you-make-a-service-singleton-in-angular)  
 24. [Explain how you can use Observables in services for data sharing.](#24-explain-how-you-can-use-observables-in-services-for-data-sharing)  
 25. [What are the different ways to provide a service in Angular?](#25-what-are-the-different-ways-to-provide-a-service-in-angular)  
 26. [Can you explain the concept of providedIn in Angular services?](#26-can-you-explain-the-concept-of-providedin-in-angular-services)  
 27. [How do you use HttpClient to process JSON in Angular?](#27-how-do-you-use-httpclient-to-process-json-in-angular)  
 28. [How would you handle REST API calls and error responses using services?](#28-how-would-you-handle-rest-api-calls-and-error-responses-using-services)  
+
+### 🎯 Angular Routing
 29. [How do you configure routing in Angular applications?](#29-how-do-you-configure-routing-in-angular-applications)  
 30. [Can you create a route that dynamically loads a module only when accessed?](#30-can-you-create-a-route-that-dynamically-loads-a-module-only-when-accessed)  
 31. [What is a Router Outlet and how is it used in Angular?](#31-what-is-a-router-outlet-and-how-is-it-used-in-angular)  
@@ -47,6 +53,8 @@ Here’s the full categorized list of 100 questions with linked titles for your 
 34. [What are route parameters and how do you access them in Angular?](#34-what-are-route-parameters-and-how-do-you-access-them-in-angular)  
 35. [How would you preload data before navigating to a route?](#35-how-would-you-preload-data-before-navigating-to-a-route)  
 36. [Can you describe how to implement lazy loading in Angular?](#36-can-you-describe-how-to-implement-lazy-loading-in-angular)  
+
+### 🎯 Angular Forms 
 37. [Explain the difference between Template-driven and Reactive forms in Angular.](#37-explain-the-difference-between-template-driven-and-reactive-forms-in-angular)  
 38. [How do you validate user input in Angular forms?](#38-how-do-you-validate-user-input-in-angular-forms)  
 39. [How can you dynamically add or remove form controls in Reactive Forms?](#39-how-can-you-dynamically-add-or-remove-form-controls-in-reactive-forms)  
@@ -54,6 +62,8 @@ Here’s the full categorized list of 100 questions with linked titles for your 
 41. [How do you create custom validators in Angular forms?](#41-how-do-you-create-custom-validators-in-angular-forms)  
 42. [Explain how to use formArrayName to handle array type form fields.](#42-explain-how-to-use-formarrayname-to-handle-array-type-form-fields)  
 43. [How do you submit form data to a backend service?](#43-how-do-you-submit-form-data-to-a-backend-service)  
+
+### 🎯 Angular Advanced Concepts
 44. [What is change detection, and how does Angular implement it?](#44-what-is-change-detection-and-how-does-angular-implement-it)  
 45. [How do you optimize the performance of Angular applications?](#45-how-do-you-optimize-the-performance-of-angular-applications)  
 46. [Can you discuss the concept of Zones in Angular?](#46-can-you-discuss-the-concept-of-zones-in-angular)  
@@ -61,55 +71,87 @@ Here’s the full categorized list of 100 questions with linked titles for your 
 48. [Can you explain the Ahead-of-Time (AOT) compilation versus Just-in-Time (JIT) compilation in Angular?](#48-can-you-explain-the-ahead-of-time-aot-compilation-versus-just-in-time-jit-compilation-in-angular)  
 49. [Describe the decorators available in Angular.](#49-describe-the-decorators-available-in-angular)  
 50. [How would you use Angular Animations to animate transitions in your application?](#50-how-would-you-use-angular-animations-to-animate-transitions-in-your-application)  
+
+### 🎯 Angular Directives
 51. [How are custom directives created in Angular?](#51-how-are-custom-directives-created-in-angular)  
 52. [Can you explain the use of ngClass and ngStyle directives?](#52-can-you-explain-the-use-of-ngclass-and-ngstyle-directives)  
 53. [How would you interact with DOM directly using directives?](#53-how-would-you-interact-with-dom-directly-using-directives)  
-54. [When should you use Renderer2 and what are its benefits?](#54-when-should-you-use-renderer2-and-what-are-its-benefits)  
+54. [When should you use Renderer2 and what are its benefits?](#54-when-should-you-use-renderer2-and-what-are-its-benefits) 
+
+### 🎯 Angular Pipes
 55. [How do you create a custom pipe in Angular?](#55-how-do-you-create-a-custom-pipe-in-angular)  
 56. [Describe the pure and impure pipes.](#56-describe-the-pure-and-impure-pipes)  
 57. [What is the async pipe and how is it used?](#57-what-is-the-async-pipe-and-how-is-it-used)  
+
+### 🎯 Angular State Management
 58. [What is NgRx and how does it help in state management?](#58-what-is-ngrx-and-how-does-it-help-in-state-management)  
 59. [Explain the concepts of Actions, Reducers, and Effects in NgRx.](#59-explain-the-concepts-of-actions-reducers-and-effects-in-ngrx)  
 60. [How would you persist application state across page refreshes?](#60-how-would-you-persist-application-state-across-page-refreshes)  
 61. [Can you discuss the concept of immutability in state management?](#61-can-you-discuss-the-concept-of-immutability-in-state-management)  
+
+### 🎯 Testing in Angular
 62. [How do you test Angular components?](#62-how-do-you-test-angular-components)  
 63. [Explain what TestBed is and its role in Angular testing.](#63-explain-what-testbed-is-and-its-role-in-angular-testing)  
 64. [How do you mock an Angular service for testing purposes?](#64-how-do-you-mock-an-angular-service-for-testing-purposes)  
 65. [Can you perform end-to-end testing in Angular? Describe the process.](#65-can-you-perform-end-to-end-testing-in-angular-describe-the-process)  
-66. [What are the differences between Jasmine and Karma in the context of Angular testing?](#66-what-are-the-differences-between-jasmine-and-karma-in-the-context-of-angular-testing)  
+66. [What are the differences between Jasmine and Karma in the context of Angular testing?](#66-what-are-the-differences-between-jasmine-and-karma-in-the-context-of-angular-testing)
+
+### 🎯 Angular Performance and Optimization
 67. [What strategies would you use to reduce the load time of an Angular application?](#67-what-strategies-would-you-use-to-reduce-the-load-time-of-an-angular-application)  
 68. [Explain Lazy Loading and how it improves application performance.](#68-explain-lazy-loading-and-how-it-improves-application-performance)  
 69. [How would you implement code splitting in Angular to improve performance?](#69-how-would-you-implement-code-splitting-in-angular-to-improve-performance)  
 70. [Discuss the use of trackBy option in *ngFor for performance improvement.](#70-discuss-the-use-of-trackby-option-in-ngfor-for-performance-improvement)  
+
+### 🎯 Angular Internationalization (i18n) and Localization
 71. [How can you add support for multiple languages in an Angular application?](#71-how-can-you-add-support-for-multiple-languages-in-an-angular-application)  
 72. [Describe the process of implementing angular localization.](#72-describe-the-process-of-implementing-angular-localization)  
+
+### 🎯 Angular Security
 73. [What are some common security best practices for Angular applications?](#73-what-are-some-common-security-best-practices-for-angular-applications)  
 74. [How do you prevent cross-site scripting (XSS) in Angular applications?](#74-how-do-you-prevent-cross-site-scripting-xss-in-angular-applications)  
 75. [Can you perform authentication and authorization in Angular applications?](#75-can-you-perform-authentication-and-authorization-in-angular-applications)  
+
+### 🎯 Angular and TypeScript
 76. [How does TypeScript differ from JavaScript and why is it preferred in Angular?](#76-how-does-typescript-differ-from-javascript-and-why-is-it-preferred-in-angular)  
 77. [What are the advantages of using TypeScript interfaces in Angular applications?](#77-what-are-the-advantages-of-using-typescript-interfaces-in-angular-applications)  
-78. [Can you explain the use of decorators in TypeScript, providing an example in Angular?](#78-can-you-explain-the-use-of-decorators-in-typescript-providing-an-example-in-angular)  
+78. [Can you explain the use of decorators in TypeScript, providing an example in Angular?](#78-can-you-explain-the-use-of-decorators-in-typescript-providing-an-example-in-angular) 
+
+### 🎯 Angular and RxJS
 79. [How does RxJS complement Angular applications?](#79-how-does-rxjs-complement-angular-applications)  
 80. [Explain the purpose of Subjects in RxJS and how they’re used in Angular.](#80-explain-the-purpose-of-subjects-in-rxjs-and-how-theyre-used-in-angular)  
 81. [What are some common RxJS operators and how do you use them in Angular?](#81-what-are-some-common-rxjs-operators-and-how-do-you-use-them-in-angular)  
+
+### 🎯 Angular Best Practices
 82. [What are some best practices for structuring a large Angular application?](#82-what-are-some-best-practices-for-structuring-a-large-angular-application)  
 83. [How do you manage global state in Angular applications?](#83-how-do-you-manage-global-state-in-angular-applications)  
-84. [What are some best practices for component communication in large Angular applications?](#84-what-are-some-best-practices-for-component-communication-in-large-angular-applications)  
+84. [What are some best practices for component communication in large Angular applications?](#84-what-are-some-best-practices-for-component-communication-in-large-angular-applications) 
+
+### 🎯 Angular and Mobile Development
 85. [Can you use Angular to create mobile applications? If so, how?](#85-can-you-use-angular-to-create-mobile-applications-if-so-how)  
 86. [What is Ionic and how does it integrate with Angular?](#86-what-is-ionic-and-how-does-it-integrate-with-angular)  
+
+### 🎯 Angular CLI
 87. [How do you add a new component, service, or module using Angular CLI?](#87-how-do-you-add-a-new-component-service-or-module-using-angular-cli)  
 88. [What are the benefits of using Angular CLI to scaffold projects?](#88-what-are-the-benefits-of-using-angular-cli-to-scaffold-projects)  
 89. [How do you update an Angular application to the latest version using Angular CLI?](#89-how-do-you-update-an-angular-application-to-the-latest-version-using-angular-cli)  
+
+### 🎯 Angular Miscellaneous
 90. [How can you integrate third-party libraries into an Angular application?](#90-how-can-you-integrate-third-party-libraries-into-an-angular-application)  
 91. [What are environment variables in Angular and how would you use them?](#91-what-are-environment-variables-in-angular-and-how-would-you-use-them)  
 92. [Can you use web workers in Angular applications and how?](#92-can-you-use-web-workers-in-angular-applications-and-how)  
 93. [How would you handle configuration settings in Angular?](#93-how-would-you-handle-configuration-settings-in-angular)  
 94. [Describe the process of data sharing between unrelated components.](#94-describe-the-process-of-data-sharing-between-unrelated-components)  
+
+### 🎯 Angular Developer Tools and Workflow
 95. [What are some popular IDEs or editors for Angular development and what features do they offer for Angular developers?](#95-what-are-some-popular-ides-or-editors-for-angular-development-and-what-features-do-they-offer-for-angular-developers)  
 96. [How do you debug Angular applications?](#96-how-do-you-debug-angular-applications)  
 97. [Explain how to use Angular Augury for performance profiling.](#97-explain-how-to-use-angular-augury-for-performance-profiling)  
+
+### 🎯 Angular Interoperability
 98. [How do you integrate Angular with other frameworks or libraries, such as React or Vue.js?](#98-how-do-you-integrate-angular-with-other-frameworks-or-libraries-such-as-react-or-vuejs)  
 99. [Can you embed an Angular application inside another application?](#99-can-you-embed-an-angular-application-inside-another-application)  
+
+### 🎯 Angular Versioning and Upgrades
 100. [Discuss the challenges you may face when upgrading an Angular application to a newer version.](#100-discuss-the-challenges-you-may-face-when-upgrading-an-angular-application-to-a-newer-version)  
 
 ---
@@ -290,7 +332,6 @@ Each file and folder has its unique role, and together they help in building, ma
 <br>
 
 ## 4. What is a _component_ in Angular and how is it used?
-**Answer:**  
 A **component** in Angular is a core building block that controls a part of the UI. It consists of three main elements:
 - **Template** (HTML): Defines the view (what the user sees).
 - **Class** (TypeScript): Contains the logic and data (controller).
