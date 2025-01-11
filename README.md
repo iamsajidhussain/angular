@@ -1,5 +1,6 @@
 # angular
-This repository contains a comprehensive collection of **Angular interview questions** to help you prepare for technical interviews. These questions cover a wide range of topics, from basics to advanced concepts, ensuring you're well-prepared for your next interview.
+This repository contains a comprehensive collection of **Angular interview questions** to help you prepare for technical interviews. These questions cover a wide range of topics, 
+from basics to advanced concepts, ensuring you're well-prepared for your next interview.
 
 ---
 
@@ -21,12 +22,27 @@ This repository contains a comprehensive collection of **Angular interview quest
 14. [What is Angular CLI and what can it be used for?](#14-what-is-angular-cli-and-what-can-it-be-used-for)
 15. [Describe how to make HTTP requests in Angular using HttpClient.](#15-describe-how-to-make-http-requests-in-angular-using-httpclient)
 
-
+16. [How would you pass data from a parent to a child component?](#16-how-would-you-pass-data-from-a-parent-to-a-child-component)
+17. [Can you describe how to emit events from a child component to a parent component?](#17-can-you-describe-how-to-emit-events-from-a-child-component-to-a-parent-component)
+18. [What are the lifecycle hooks available for Angular components and what do they represent?](#18-what-are-the-lifecycle-hooks-available-for-angular-components-and-what-do-they-represent)
+19. [Explain the concept of ViewEncapsulation in Angular.](#19-explain-the-concept-of-viewencapsulation-in-angular)
+20. [How do you apply conditional styling to Angular components?](#20-how-do-you-apply-conditional-styling-to-angular-components)
+21. [What is the difference between structural and attribute directives?](#21-what-is-the-difference-between-structural-and-attribute-directives)
+22. [Describe how you would create a custom structural directive.](#22-describe-how-you-would-create-a-custom-structural-directive)
+23. [How can you make a service singleton in Angular?](#23-how-can-you-make-a-service-singleton-in-angular)
+24. [Explain how you can use Observables in services for data sharing.](#24-explain-how-you-can-use-observables-in-services-for-data-sharing)
+25. [What are the different ways to provide a service in Angular?](#25-what-are-the-different-ways-to-provide-a-service-in-angular)
+26. [Can you explain the concept of providedIn in Angular services?](#26-can-you-explain-the-concept-of-providedin-in-angular-services)
+27. [How do you use HttpClient to process JSON in Angular?](#27-how-do-you-use-httpclient-to-process-json-in-angular)
+28. [How would you handle REST API calls and error responses using services?](#28-how-would-you-handle-rest-api-calls-and-error-responses-using-services)
+29. [How do you configure routing in Angular applications?](#29-how-do-you-configure-routing-in-angular-applications)
+30. [Can you create a route that dynamically loads a module only when accessed?](#30-can-you-create-a-route-that-dynamically-loads-a-module-only-when-accessed)
 ---
 
 ## 📘 Introduction
 
-Welcome to the **.Angular Interview Questions** repository! Whether you're a beginner or an experienced developer, this repository will help you solidify your knowledge of Angular and related technologies. 
+Welcome to the **.Angular Interview Questions** repository! Whether you're a beginner or an experienced developer, this repository will help you solidify your knowledge of Angular and 
+related technologies. 
 
 ### What You'll Find Here:
 - Questions categorized by topic for easy navigation.
@@ -38,7 +54,8 @@ Feel free to contribute to this repository and make it even more valuable for th
 ---
 ## 🎯 Angular Fundamentals
 ## 1. What is _Angular_ and what are its key features?  
-Angular is a TypeScript-based open-source framework for building single-page web applications (SPAs). It is maintained by Google and offers a powerful ecosystem for developing dynamic and scalable applications.  
+Angular is a TypeScript-based open-source framework for building single-page web applications (SPAs). It is maintained by Google and offers a powerful ecosystem for developing dynamic and 
+scalable applications.  
 
 **Key Features:**  
 1. **Two-way Data Binding**: Synchronizes data between the model and the view.  
@@ -79,7 +96,8 @@ Data binding in Angular synchronizes data between the component and view. It inc
 <br>
 
 ## 3. Describe the Angular application architecture.  
-The architecture of an Angular project is organized into several key files and folders, each serving a specific purpose to structure and manage your application effectively. Below is a detailed explanation of the typical Angular project architecture, along with the uses of each file and folder.
+The architecture of an Angular project is organized into several key files and folders, each serving a specific purpose to structure and manage your application effectively. 
+Below is a detailed explanation of the typical Angular project architecture, along with the uses of each file and folder.
 
 ### 1. **src/app** - The Core Application Folder
    - **Purpose**: Contains the main logic of your application, including components, services, and modules.
@@ -95,7 +113,8 @@ The architecture of an Angular project is organized into several key files and f
    - **components/**: Contains all Angular components for your app. A component consists of a TypeScript file for logic, an HTML file for the template, and a CSS file for styling.
      - **Example**: `header.component.ts`, `footer.component.ts`
    
-   - **services/**: Contains all your Angular services. Services are used for logic that needs to be shared across components (e.g., API calls, data manipulation, etc.). They are typically injected into components via Angular's dependency injection system.
+   - **services/**: Contains all your Angular services. Services are used for logic that needs to be shared across components (e.g., API calls, data manipulation, etc.). 
+   They are typically injected into components via Angular's dependency injection system.
      - **Example**: `auth.service.ts`, `user.service.ts`
    
    - **models/**: Stores TypeScript interfaces or classes that define data structures for your app.
