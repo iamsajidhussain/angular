@@ -21,7 +21,6 @@ from basics to advanced concepts, ensuring you're well-prepared for your next in
 13. [How do you handle form submissions in Angular?](#13-how-do-you-handle-form-submissions-in-angular)
 14. [What is Angular CLI and what can it be used for?](#14-what-is-angular-cli-and-what-can-it-be-used-for)
 15. [Describe how to make HTTP requests in Angular using HttpClient.](#15-describe-how-to-make-http-requests-in-angular-using-httpclient)
-
 16. [How would you pass data from a parent to a child component?](#16-how-would-you-pass-data-from-a-parent-to-a-child-component)
 17. [Can you describe how to emit events from a child component to a parent component?](#17-can-you-describe-how-to-emit-events-from-a-child-component-to-a-parent-component)
 18. [What are the lifecycle hooks available for Angular components and what do they represent?](#18-what-are-the-lifecycle-hooks-available-for-angular-components-and-what-do-they-represent)
@@ -37,8 +36,27 @@ from basics to advanced concepts, ensuring you're well-prepared for your next in
 28. [How would you handle REST API calls and error responses using services?](#28-how-would-you-handle-rest-api-calls-and-error-responses-using-services)
 29. [How do you configure routing in Angular applications?](#29-how-do-you-configure-routing-in-angular-applications)
 30. [Can you create a route that dynamically loads a module only when accessed?](#30-can-you-create-a-route-that-dynamically-loads-a-module-only-when-accessed)
-[31. What is a Router Outlet and how is it used in Angular?](#31-what-is-a-router-outlet-and-how-is-it-used-in-angular)
-[32. What is a Router Outlet and how is it used in Angular?](#31-what-is-a-router-outlet-and-how-is-it-used-in-angular)
+31. [What is a Router Outlet and how is it used in Angular?](#31-what-is-a-router-outlet-and-how-is-it-used-in-angular)
+32. [How do you apply route guards in Angular?](#32-how-do-you-apply-route-guards-in-angular)
+33. [Explain the purpose of ActivatedRoute in Angular routing.](#33-explain-the-purpose-of-activatedroute-in-angular-routing)
+34. [What are route parameters and how do you access them in Angular?](#34-what-are-route-parameters-and-how-do-you-access-them-in-angular)
+35. [How would you preload data before navigating to a route?](#35-how-would-you-preload-data-before-navigating-to-a-route)
+36. [Can you describe how to implement lazy loading in Angular?](#36-can-you-describe-how-to-implement-lazy-loading-in-angular)
+37. [Explain the difference between Template-driven and Reactive forms in Angular.](#37-explain-the-difference-between-template-driven-and-reactive-forms-in-angular)
+38. [How do you validate user input in Angular forms?](#38-how-do-you-validate-user-input-in-angular-forms)
+39. [How can you dynamically add or remove form controls in Reactive Forms?](#39-how-can-you-dynamically-add-or-remove-form-controls-in-reactive-forms)
+40. [What are form groups and how do they work in Angular?](#40-what-are-form-groups-and-how-do-they-work-in-angular)
+41. [How do you create custom validators in Angular forms?](#41-how-do-you-create-custom-validators-in-angular-forms)
+42. [Explain how to use formArrayName to handle array type form fields.](#42-explain-how-to-use-formarrayname-to-handle-array-type-form-fields)
+43. [How do you submit form data to a backend service?](#43-how-do-you-submit-form-data-to-a-backend-service)
+44. [What is change detection, and how does Angular implement it?](#44-what-is-change-detection-and-how-does-angular-implement-it)
+45. [How do you optimize the performance of Angular applications?](#45-how-do-you-optimize-the-performance-of-angular-applications)
+46. [Can you discuss the concept of Zones in Angular?](#46-can-you-discuss-the-concept-of-zones-in-angular)
+47. [How do you implement server-side rendering (SSR) in Angular with Angular Universal?](#47-how-do-you-implement-server-side-rendering-ssr-in-angular-with-angular-universal)
+48. [Can you explain the Ahead-of-Time (AOT) compilation versus Just-in-Time (JIT) compilation in Angular?](#48-can-you-explain-the-ahead-of-time-aot-compilation-versus-just-in-time-jit-compilation-in-angular)
+49. [Describe the decorators available in Angular.](#49-describe-the-decorators-available-in-angular)
+50. [How would you use Angular Animations to animate transitions in your application?](#50-how-would-you-use-angular-animations-to-animate-transitions-in-your-application)
+
 ---
 
 ## 📘 Introduction
