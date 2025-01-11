@@ -38,6 +38,7 @@ from basics to advanced concepts, ensuring you're well-prepared for your next in
 29. [How do you configure routing in Angular applications?](#29-how-do-you-configure-routing-in-angular-applications)
 30. [Can you create a route that dynamically loads a module only when accessed?](#30-can-you-create-a-route-that-dynamically-loads-a-module-only-when-accessed)
 [31. What is a Router Outlet and how is it used in Angular?](#31-what-is-a-router-outlet-and-how-is-it-used-in-angular)
+[32. What is a Router Outlet and how is it used in Angular?](#31-what-is-a-router-outlet-and-how-is-it-used-in-angular)
 ---
 
 ## 📘 Introduction
