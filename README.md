@@ -1804,8 +1804,6 @@ private handleError(error: HttpErrorResponse): Observable<never> {
 
 ## 🎯 Angular Routing
 ## 29. How do you configure routing in Angular applications?  
-**Answer:**
-
 In Angular, routing allows navigation between different views or components in a single-page application (SPA). Here's how to configure routing:
 
 ### **1. Import the RouterModule:**
@@ -1984,8 +1982,6 @@ In your `app.component.html` (or any component where you want to navigate), you 
 <br>
 
 ## 31. What is a Router Outlet and how is it used in Angular?  
-**Answer:**
-
 In Angular, a **`RouterOutlet`** is a directive that acts as a placeholder in the template where routed views will be displayed. It is used to render the component associated with the active route when the route changes.
 
 ### **How It Works:**
@@ -2045,8 +2041,6 @@ To navigate between views, use **`routerLink`** in anchor tags (`<a>`).
 <br>
 
 ## 32. How do you apply route guards in Angular?  
-**Answer:**
-
 In Angular, **route guards** are used to control access to routes based on certain conditions. They can prevent unauthorized navigation, redirect users, or perform any logic before entering or leaving a route. The main types of route guards are **CanActivate**, **CanDeactivate**, **CanLoad**, **Resolve**, and **CanActivateChild**.
 
 ### **Steps to Apply Route Guards:**
@@ -2145,8 +2139,6 @@ You can chain multiple guards or combine them using logical conditions to apply 
 <br>
 
 ## 33. Explain the purpose of ActivatedRoute in Angular routing.  
-**Answer:**
-
 In Angular, **`ActivatedRoute`** is a service that provides access to the information about the current route associated with the component being displayed. It allows you to retrieve parameters, query parameters, fragment, and route data that are associated with the active route.
 
 ### **Key Uses of `ActivatedRoute`:**
@@ -2231,8 +2223,6 @@ export class DetailComponent {
 <br>
 
 ## 34. What are route parameters and how do you access them in Angular?  
-**Answer:**
-
 **Route parameters** are dynamic values in the URL path that allow you to pass data to components during navigation. These are part of the route definition and are typically used to represent resource identifiers like an `ID` or a `slug`. 
 
 ### **Example of Route with Parameters:**
@@ -2294,8 +2284,6 @@ For the route `product/:id`, a URL like `/product/123` will pass `123` as the ro
 <br>
 
 ## 35. How would you preload data before navigating to a route?  
-**Answer:**
-
 In Angular, to **preload data** before navigating to a route, you can use **route resolvers**. A resolver is a service that pre-fetches data before the route is activated. This ensures that the required data is available before the component is loaded, preventing the component from loading with missing or incomplete data.
 
 ### **Steps to Preload Data Using a Resolver:**
@@ -2393,8 +2381,6 @@ export class DataComponent implements OnInit {
 <br>
 
 ## 36. Can you describe how to implement lazy loading in Angular?  
-**Answer:**
-
 **Lazy loading** in Angular is a design pattern used to load feature modules only when they are needed, rather than loading them at the application startup. This improves the initial load time of the application, as only the essential parts of the app are loaded first.
 
 ### **Steps to Implement Lazy Loading in Angular:**
@@ -2472,8 +2458,6 @@ Now, the `FeatureModule` will only be loaded when the user navigates to `/featur
 
 ## 🎯 Angular Forms
 ## 37. Explain the difference between Template-driven and Reactive forms in Angular.  
-**Answer:**
-
 In Angular, there are two main types of forms for handling user input: **Template-driven forms** and **Reactive forms**. Both serve the same purpose but differ in their approach and how they manage the form controls and validation.
 
 ### **Template-driven Forms:**
@@ -2555,8 +2539,6 @@ export class ReactiveFormComponent implements OnInit {
 <br>
 
 ## 38. How do you validate user input in Angular forms?  
-**Answer:**
-
 In Angular, user input validation can be done using both **Template-driven** and **Reactive forms**. Angular provides various built-in validators and allows the creation of custom validators.
 
 ### **1. Built-in Validators:**
@@ -2680,8 +2662,6 @@ You can display validation errors in both template-driven and reactive forms.
 <br>
 
 ## 39. How can you dynamically add or remove form controls in Reactive Forms?  
-**Answer:**
-
 In **Reactive Forms**, you can dynamically add or remove form controls using the `FormGroup` and `FormArray` APIs.
 
 ### **1. Adding a Form Control:**
@@ -2788,8 +2768,6 @@ These methods enable dynamic management of form controls in Angular reactive for
 <br>
 
 ## 40. What are form groups and how do they work in Angular?
-**Answer:**
-
 In Angular, a **FormGroup** is a collection of form controls that can be managed together. It is used in **Reactive Forms** to group individual `FormControl` instances into a single unit, allowing you to track the entire form's state and validation.
 
 ### **Key Features of FormGroup:**
@@ -2869,8 +2847,6 @@ this.userForm = this.fb.group({
 <br>
 
 ## 41. How do you create custom validators in Angular forms?
-**Answer:**
-
 In Angular, **custom validators** are used to create validation logic that is not provided by the built-in validators. A custom validator is a function that takes a `FormControl` as an argument and returns either a validation error object or `null` if the control is valid.
 
 ### **Steps to Create a Custom Validator:**
@@ -2968,8 +2944,6 @@ this.myForm = this.fb.group({
 <br>
 
 ## 42. Explain how to use formArrayName to handle array-type form fields.
-**Answer:**
-
 In Angular, **`formArrayName`** is used to bind an array of form controls within a **Reactive Form**. It allows you to manage multiple form controls of the same type dynamically, like adding or removing items in a form array.
 
 ### **Steps to Use `formArrayName`:**
@@ -3053,8 +3027,6 @@ export class DynamicFormComponent implements OnInit {
 <br>
 
 ## 43. How do you submit form data to a backend service?
-**Answer:**
-
 To submit form data to a backend service in Angular, you can follow these steps:
 
 1. **Create a Form in the Component:**
@@ -3169,8 +3141,6 @@ export class MyDataService {
 
 ## 🎯 Angular Advanced Concepts
 ## 44. What is change detection, and how does Angular implement it?  
-**Answer:**
-
 **Change Detection** in Angular is a mechanism that keeps the view (UI) in sync with the model (data). It automatically checks for changes in the application data and updates the DOM (view) when necessary. Angular's change detection system ensures that the view is always consistent with the underlying model.
 
 ### **How Angular Implements Change Detection:**
@@ -3205,8 +3175,6 @@ Angular uses a **Change Detection Tree** where each component has its own **Chan
 <br>
 
 ## 45. How do you optimize the performance of Angular applications?
-**Answer:**
-
 Optimizing Angular applications for performance is crucial to ensure fast load times, smooth interactions, and efficient rendering. Here are some strategies to optimize performance:
 
 ### 1. **Use OnPush Change Detection Strategy:**
@@ -3264,8 +3232,6 @@ To optimize Angular performance, use strategies like **OnPush change detection**
 <br>
 
 ## 46. Can you discuss the concept of Zones in Angular?
-**Answer:**
-
 **Zones** in Angular, powered by **Zone.js**, are a mechanism for tracking and managing asynchronous operations like HTTP requests, setTimeout, or event handlers. Angular uses Zones to automatically trigger change detection when asynchronous events occur, ensuring that the view is updated whenever there is a change in the underlying model.
 
 ### **What are Zones?**
@@ -3298,8 +3264,6 @@ Zones in Angular (via Zone.js) manage asynchronous operations and ensure automat
 <br>
 
 ## 47. How do you implement server-side rendering (SSR) in Angular with Angular Universal?
-**Answer:**
-
 **Server-Side Rendering (SSR)** in Angular is achieved using **Angular Universal**, which allows you to render Angular applications on the server. This can improve the initial load time, SEO, and performance of your Angular application. 
 
 ### **Steps to Implement SSR with Angular Universal:**
@@ -3362,8 +3326,6 @@ To implement SSR in Angular with **Angular Universal**, you need to install the 
 <br>
 
 ## 48. Can you explain the Ahead-of-Time (AOT) compilation versus Just-in-Time (JIT) compilation in Angular?
-**Answer:**
-
 **Ahead-of-Time (AOT) Compilation** and **Just-in-Time (JIT) Compilation** are two methods Angular uses to compile an application.
 
 ### **1. Just-in-Time (JIT) Compilation:**
@@ -3419,8 +3381,6 @@ To implement SSR in Angular with **Angular Universal**, you need to install the 
 <br>
 
 ## 49. Describe the decorators available in Angular.
-**Answer:**
-
 In Angular, **decorators** are used to add metadata to classes, methods, properties, and parameters, enabling Angular to understand the behavior of these elements and how to interact with them. They provide a way to associate metadata with the application components, services, directives, and other building blocks.
 
 Here are the commonly used decorators in Angular:
@@ -3588,8 +3548,6 @@ These decorators allow Angular to recognize components, services, directives, an
 <br>
 
 ## 50. How would you use Angular Animations to animate transitions in your application?  
-**Answer:**
-
 Angular Animations allow you to add dynamic transitions between states in your application. They help create smooth animations for various UI elements, making your app more interactive and engaging. Animations are typically triggered by changes in state, such as when a component enters or exits the view, or when an element's state changes.
 
 ### Steps to use Angular Animations:
@@ -3693,8 +3651,6 @@ Angular Animations allow you to add dynamic transitions between states in your a
 
 ## 🎯 Angular Directives
 ## 51. How are custom directives created in Angular?  
-**Answer:**
-
 Custom directives in Angular allow you to extend HTML behavior by creating reusable and custom behaviors for elements. Directives are used to manipulate the DOM or attach specific behaviors to elements in your templates.
 
 ### Steps to Create a Custom Directive:
@@ -3780,9 +3736,7 @@ Custom directives in Angular allow you to extend HTML behavior by creating reusa
 <br>
 
 ## 52. Can you explain the use of ngClass and ngStyle directives?
-**Answer:**
-
-In Angular, `ngClass` and `ngStyle` are structural directives that allow you to conditionally add or modify CSS classes and inline styles to HTML elements dynamically. These directives help you manage styling in your application based on conditions or states.
+In Angular, `ngClass` and `ngStyle` are behavioural directives that allow you to conditionally add or modify CSS classes and inline styles to HTML elements dynamically. These directives help you manage styling in your application based on conditions or states.
 
 ### **1. ngClass Directive:**
 
@@ -3868,8 +3822,6 @@ In Angular, `ngClass` and `ngStyle` are structural directives that allow you to 
 <br>
 
 ## 53. How would you interact with DOM directly using directives?
-**Answer:**
-
 In Angular, directives can interact directly with the DOM by manipulating elements or their properties. This is done using `ElementRef`, `Renderer2`, and lifecycle hooks, which allow you to access and modify the DOM in a clean and efficient way.
 
 ### **Steps to Interact with DOM Using Directives:**
@@ -3955,8 +3907,6 @@ In Angular, directives can interact directly with the DOM by manipulating elemen
 <br>
 
 ## 54. When should you use Renderer2 and what are its benefits?
-**Answer:**
-
 `Renderer2` in Angular is a service used to safely manipulate the DOM in a platform-independent way. It should be preferred over direct access to the DOM through `ElementRef`, as it helps ensure that your application is compatible with different platforms, including server-side rendering (SSR) and Web Workers.
 
 ### **When to Use Renderer2:**
@@ -4012,8 +3962,6 @@ export class HighlightDirective {
 
 ## 🎯 Angular Pipes
 ## 55. How do you create a custom pipe in Angular?
-**Answer:**
-
 To create a custom pipe in Angular, you need to follow these steps:
 
 ### **Steps to Create a Custom Pipe:**
@@ -4090,8 +4038,6 @@ export class ReversePipe implements PipeTransform {
 <br>
 
 ## 56. Describe the pure and impure pipes.
-**Answer:**
-
 In Angular, **pipes** are used to transform data in templates. Angular pipes can be classified as **pure** or **impure** based on how they handle changes in input data.
 
 ### **Pure Pipes:**
@@ -4166,8 +4112,6 @@ export class RandomPipe implements PipeTransform {
 <br>
 
 ## 57. What is the async pipe and how is it used?
-**Answer:**
-
 The **async pipe** in Angular is a built-in pipe that allows you to subscribe to an **Observable** or a **Promise** directly in the template and automatically handles the subscription and unsubscription. It simplifies the process of handling asynchronous data streams like HTTP requests, WebSocket messages, or timers.
 
 ### **How the async pipe works:**
@@ -4237,8 +4181,6 @@ export class AsyncPipePromiseComponent {
 
 ## 🎯 Angular State Management
 ## 58. What is NgRx and how does it help in state management?
-**Answer:**
-
 **NgRx** is a state management library for Angular applications that is inspired by **Redux**. It helps manage the application's state in a predictable way by using a **single global store** and enforcing **unidirectional data flow**.
 
 ### **How NgRx helps in state management:**
@@ -4281,8 +4223,6 @@ export class AsyncPipePromiseComponent {
 <br>
 
 ## 59. Explain the concepts of Actions, Reducers, and Effects in NgRx.
-**Answer:**
-
 In **NgRx**, the concepts of **Actions**, **Reducers**, and **Effects** are key components of the state management flow. They help manage state changes and handle side effects (like HTTP requests, logging, etc.) in a predictable manner.
 
 ### **1. Actions:**
@@ -4380,8 +4320,6 @@ These three concepts work together in NgRx to ensure predictable, scalable, and 
 <br>
 
 ## 60. How would you persist application state across page refreshes?
-**Answer:**
-
 To persist application state across page refreshes in Angular, we can use several approaches, but the most common ones are **localStorage**, **sessionStorage**, or **IndexedDB**. These methods help to store the application's state in the browser so that even after a page refresh, the state can be rehydrated.
 
 ### **1. Using localStorage or sessionStorage:**
@@ -4486,8 +4424,6 @@ This way, **NgRx** can automatically save and load state, ensuring persistence e
 <br>
 
 ## 61. Can you discuss the concept of immutability in state management?
-**Answer:**
-
 Immutability in state management refers to the practice of not directly modifying the existing state but instead creating a new copy of the state with the desired changes. This is a fundamental concept in modern state management, especially when using libraries like **NgRx**, **Redux**, or other flux-based architectures.
 
 ### **Why Immutability is Important:**
@@ -4565,8 +4501,6 @@ case '[User] Update Name':
 
 ## 🎯 Testing in Angular
 ## 62. How do you test Angular components?
-**Answer:**
-
 Testing Angular components involves writing unit tests to check the behavior of individual components in isolation. Angular provides tools like **Jasmine** for writing tests and **Karma** for running them in a browser. The testing framework is integrated with Angular via **TestBed**, a utility that allows you to configure and create test modules for Angular components.
 
 ### **Steps to Test Angular Components:**
@@ -4659,8 +4593,6 @@ describe('MyComponent', () => {
 <br>
 
 ## 63. Explain what TestBed is and its role in Angular testing.
-**Answer:**
-
 **TestBed** is a testing utility provided by Angular that plays a central role in the testing of Angular applications. It is part of the Angular testing framework and allows you to configure a testing module, set up components and their dependencies, and perform various unit tests.
 
 ### **Role of TestBed in Angular Testing:**
@@ -4716,8 +4648,6 @@ describe('MyComponent', () => {
 <br>
 
 ## 64. How do you mock an Angular service for testing purposes?
-**Answer:**
-
 Mocking an Angular service for testing purposes involves creating a fake version of the service that simulates the behavior of the real service. This is done to avoid making actual API calls or performing operations that are not relevant for unit tests. You can use **Jasmine** to create mocks and provide them to your component or service during testing.
 
 ### **Steps to Mock a Service:**
@@ -4813,8 +4743,6 @@ describe('MyComponent', () => {
 <br>
 
 ## 65. Can you perform end-to-end testing in Angular? Describe the process.
-**Answer:**
-
 Yes, you can perform **end-to-end (E2E) testing** in Angular using **Protractor**, which is the default testing framework for Angular. Protractor allows you to simulate user interactions with your application in a real browser environment and verify that the application behaves as expected.
 
 ### **Process of Performing E2E Testing in Angular:**
@@ -4921,8 +4849,6 @@ By using E2E testing, you can ensure that your Angular application works as expe
 <br>
 
 ## 66. What are the differences between Jasmine and Karma in the context of Angular testing?
-**Answer:**
-
 **Jasmine** and **Karma** are both used in Angular testing, but they serve different purposes. Here's a breakdown of their differences:
 
 ### **Jasmine:**
@@ -4973,8 +4899,6 @@ By using E2E testing, you can ensure that your Angular application works as expe
 
 ## 🎯 Angular Performance and Optimization
 ## 67. What strategies would you use to reduce the load time of an Angular application?
-**Answer:**
-
 To reduce the load time of an Angular application, you can implement the following strategies:
 
 ### 1. **Lazy Loading**
@@ -5037,8 +4961,6 @@ To reduce Angular app load time:
 <br>
 
 ## 68. Explain Lazy Loading and how it improves application performance.
-**Answer:**
-
 **Lazy Loading** is a design pattern in Angular that helps in loading feature modules **only when they are needed**, instead of loading the entire application upfront. This improves the performance of the application by reducing the initial load time and the size of the bundle being downloaded.
 
 ### How Lazy Loading Improves Application Performance:
@@ -5081,8 +5003,6 @@ Lazy Loading improves Angular app performance by:
 <br>
 
 ## 69. How would you implement code splitting in Angular to improve performance?
-**Answer:**
-
 **Code splitting** in Angular involves breaking down the application into smaller bundles, which can be loaded on demand, rather than loading a single large bundle. This can significantly improve the application's performance, especially for large apps.
 
 ### How Code Splitting Improves Performance:
@@ -5148,8 +5068,6 @@ To implement code splitting in Angular:
 <br>
 
 ## 70. Discuss the use of trackBy option in *ngFor for performance improvement.
-**Answer:**
-
 The `trackBy` option in Angular’s `*ngFor` directive helps to optimize the performance of rendering lists or collections by efficiently tracking items and minimizing DOM manipulations during updates.
 
 ### How trackBy Improves Performance:
@@ -5206,8 +5124,6 @@ Using `trackBy` in `*ngFor` improves performance by:
 
 ## 🎯 Angular Internationalization (i18n) and Localization
 ## 71. How can you add support for multiple languages in an Angular application?
-**Answer:**
-
 To add support for multiple languages (internationalization or i18n) in an Angular application, Angular provides built-in tools and libraries to manage translations, handle locale data, and switch between languages. Here’s how you can implement it:
 
 ### Steps to Add Multiple Languages in Angular:
@@ -5354,8 +5270,6 @@ This approach enables dynamic language switching in Angular applications.
 <br>
 
 ## 72. Describe the process of implementing Angular localization.
-**Answer:**
-
 Localization in Angular involves adapting your application to different languages and regions. Angular provides built-in tools for implementing localization, including translation and formatting of content such as dates, numbers, and currencies.
 
 ### Steps to Implement Angular Localization:
@@ -5500,8 +5414,6 @@ Angular provides built-in tools and third-party libraries to simplify the locali
 
 ## 🎯 Angular Security
 ## 73. What are some common security best practices for Angular applications?
-**Answer:**
-
 Security is a critical aspect of any web application. Here are some common security best practices for Angular applications:
 
 ### 1. **Use HTTPS**:
@@ -5626,8 +5538,6 @@ These best practices help safeguard Angular applications from common security th
 <br>
 
 ## 74. How do you prevent cross-site scripting (XSS) in Angular applications?
-**Answer:**
-
 Cross-Site Scripting (XSS) is a security vulnerability that allows attackers to inject malicious scripts into web pages, potentially compromising user data and session security. Angular provides several mechanisms to prevent XSS attacks effectively.
 
 ### Ways to Prevent XSS in Angular:
@@ -5692,8 +5602,6 @@ By following these guidelines, Angular provides strong protection against XSS at
 <br>
 
 ## 75. Can you perform authentication and authorization in Angular applications?
-**Answer:**
-
 Yes, Angular provides robust mechanisms for handling **authentication** and **authorization**. Here's how you can implement both in Angular applications.
 
 ### Authentication in Angular:
@@ -5909,8 +5817,6 @@ By implementing both authentication and authorization, Angular applications can 
 
 ## 🎯 Angular and TypeScript
 ## 76. How does TypeScript differ from JavaScript and why is it preferred in Angular?
-**Answer:**
-
 **TypeScript** is a superset of **JavaScript** that introduces additional features like static typing, interfaces, and classes, while remaining compatible with JavaScript. It provides better tooling support and enhances the development experience, especially for large-scale applications like those built with **Angular**.
 
 Here are some key differences between **TypeScript** and **JavaScript**:
